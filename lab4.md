@@ -87,7 +87,7 @@ int main() {
 
 **Recorregut:** S'utilitza quan cal visitar tots els elements d'una estructura de dades per realitzar alguna operació sobre cadascun (per exemple, imprimir, modificar, sumar).
 
-**Cerca:** S'utilitza quan només es vol trobar un element específic. La cerca seqüencial s'utilitza quan l'estructura no està ordenada, mentre que la cerca binària és més eficient però requereix una estructura ordenada.
+**Cerca:** S'utilitza quan només es vol trobar un element específic. La cerca seqüencial s'utilitza quan l'estructura no està ordenada, mentre que la cerca binària (que veurem més endavant a l'assignatura) és més eficient però requereix una estructura ordenada.
 
 ## Exercicis per a fer avui
 
