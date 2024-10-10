@@ -69,7 +69,7 @@ int n_digits(int n) {
     int digits = 0;
     while (n > 0) {
         digits++;
-        n /= 10;
+        n = n/10;
     }
     return digits;
 }
@@ -78,8 +78,8 @@ int elevar_numero_i_suma(int num, int digits) {
     int suma = 0;
     while (num > 0) {
         int digit = num % 10;
-        suma += my_pow(digit, digits);
-        num /= 10;
+        suma = suma + my_pow(digit, digits);
+        num = num/10;
     }
     return suma;
 }
