@@ -52,6 +52,39 @@ string retornar_salutacio() {
 }  
 ```
 
+6. **Podem fer funcions dins de funcions? **Sí!** **
+
+```c++
+#include <iostream>
+using namespace std;
+
+
+bool es_parell(int num) {  
+    return num % 2 == 0;  
+}  
+
+void imprimeix_si_es_parell(int a){
+    bool b = es_parell(a);
+    if (b){
+        cout << "Es parell" << endl;
+    }
+    else cout << "No és parell" << endl;
+}
+
+
+int main(){
+    int num1 = 12;
+    imprimeix_si_es_parell(num1);
+
+    int num2 = 12;
+    imprimeix_si_es_parell(num2);
+
+    int num3 = 7;
+    imprimeix_si_es_parell(num3);
+
+}
+```
+
 # Exercici nombres estranys amb funcions:
 ```c++
 #include <iostream>
