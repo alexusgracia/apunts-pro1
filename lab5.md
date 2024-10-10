@@ -52,7 +52,7 @@ string retornar_salutacio() {
 }  
 ```
 
-6. **Podem fer funcions dins de funcions? **Sí!** **
+6. **Podem fer funcions dins de funcions? __Sí!__ **
 
 ```c++
 #include <iostream>
