@@ -55,8 +55,15 @@ string retornar_salutacio() {
 # Exercici nombres estranys amb funcions:
 ```c++
 #include <iostream>
-#include <cmath>
 using namespace std;
+
+int my_pow(int digit, int digits){
+    int resultat = 1;
+    for (int i = 0; i < digits; i++) {
+        resultat = resultat * digit;
+    }
+    return resultat;
+}
 
 int n_digits(int n) {
     int digits = 0;
@@ -71,7 +78,7 @@ int elevar_numero_i_suma(int num, int digits) {
     int suma = 0;
     while (num > 0) {
         int digit = num % 10;
-        suma += pow(digit, digits);
+        suma += my_pow(digit, digits);
         num /= 10;
     }
     return suma;
