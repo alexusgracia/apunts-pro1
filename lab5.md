@@ -76,7 +76,7 @@ int main(){
     int num1 = 12;
     imprimeix_si_es_parell(num1);
 
-    int num2 = 12;
+    int num2 = 15;
     imprimeix_si_es_parell(num2);
 
     int num3 = 7;
