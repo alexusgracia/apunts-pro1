@@ -1,6 +1,101 @@
 # Apunts quinta classe PRO1
 
 
+# Petita introducció a funcions
+
+Una **funció** en C++ és un bloc de codi que realitza una tasca específica. 
+
+Les funcions ajuden a estructurar el codi en parts reutilitzables. 
+
+Tota funció té tipus de retorn, el nom i els paràmetres.
+
+### Tipus de funcions en C++
+
+1. **Funció `void`**: No retorna cap valor. Es fa servir per a funcions que només executen accions.
+
+```c++
+void saludar() {  
+    cout << "Hola a tothom!" << endl;  
+}  
+```
+
+2. **Funció que retorna un enter (`int`)**: Retorna un valor de tipus enter. S'utilitza quan necessitem que la funció ens torni un valor numèric sencer.
+
+```c++
+int sumar(int a, int b) {  
+    return a + b;  
+}  
+```
+
+3. **Funció que retorna un booleà (`bool`)**: Retorna un valor lògic `true` o `false`. Es fa servir sovint per a funcions que realitzen comprovacions.
+
+```c++
+bool es_parell(int num) {  
+    return num % 2 == 0;  
+}  
+```
+
+4. **Funció que retorna un nombre decimal (`double`)**: Retorna un valor decimal. Es fa servir per càlculs amb números amb decimals.
+
+```c++
+double dividir(double a, double b) {  
+    return a / b;  
+}  
+```
+
+5. **Funció que retorna una cadena de text (`string`)**: 
+
+```c++
+
+string retornar_salutacio() {  
+    return "PRO1 mola!";  
+}  
+```
+
+# Exercici nombres estranys amb funcions:
+```c++
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int n_digits(int n) {
+    int digits = 0;
+    while (n > 0) {
+        digits++;
+        n /= 10;
+    }
+    return digits;
+}
+
+int elevar_numero_i_suma(int num, int digits) {
+    int suma = 0;
+    while (num > 0) {
+        int digit = num % 10;
+        suma += pow(digit, digits);
+        num /= 10;
+    }
+    return suma;
+}
+
+int main() {
+
+    int n;
+
+    while(cin >> n){
+
+        int digits = n_digits(n);
+        
+        int suma = elevar_numero_i_suma(n, digits);
+        
+        if (suma == n) {
+            cout << "strange number: "<< n  << endl;
+        } else {
+            cout << "not strange number: "<< n << endl;
+        }
+    }
+}
+```
+
 ## Exercicis per a fer avui
 
 
