@@ -1,5 +1,70 @@
 # Apunts sisena classe PRO1
 
+## Petita introducció a recursivitat
+
+
+La **recursivitat** és un concepte fonamental en informàtica i matemàtiques, que permet resoldre problemes mitjançant la definició d'una solució en termes de si mateixa. En programació, una funció es considera recursiva quan s'invoca a si mateixa durant la seva execució.
+
+### Components d'una Funció Recursiva
+
+1. **Cas Base**: És la condició que permet que la funció deixi de cridar-se a si mateixa. Sense un cas base, la funció pot entrar en un bucle infinit. És el més important de definir.
+
+2. **Crida Recursiva**: És l'execució de la funció dins de la seva pròpia definició, amb arguments modificats que **apropen** la solució al cas base.
+
+### Exemple: Càlcul del Factorial
+
+Un exemple comú de recursivitat és el càlcul del factorial d'un nombre `n` (denotat com `n!`). La definició recursiva és:
+
+- Cas base: `0! = 1`
+- Crida recursiva: `n! = n * (n - 1)!`
+
+Per exemple, el factorial de 5 és 120:
+I les crides recursives serien:
+- 5x 4!
+- 5x4x 3!
+- 5x4x3x 2!
+- 5x4x3x2x 1!
+- 5x4x3x2x1x 0! (I aquí es compleix el cas base i tornem enrera fent la multiplicació).
+- 5x4x3x2x1x 1
+- 5x4x3x2x 1
+- 5x4x3x 2
+- 5x4x 6
+- 5x 24
+- 120
+
+### Implementació en C++
+
+```c++
+int factorial(int n) {
+    if (n == 0) {
+        return 1; // Cas base
+    }
+    return n * factorial(n - 1); // Crida recursiva
+}
+````
+
+## Exemple de potència recursiva
+
+```c++
+#include <iostream>
+using namespace std;
+
+// Precondició: exp >= 0;
+int my_pow(int base, int exp) {
+    // Cas base: qualsevol número elevat a 0 és 1
+    if (exp == 0)
+        return 1;
+    // Crida recursiva: base * base^(exp - 1)
+    return base * my_pow(base, exp - 1);
+}
+
+int main() {
+    //Fem un main per a comprovar que és correcte
+    cout << my_pow(3, 3) << endl; //Ha de donar 27
+    cout << my_pow(2, 4) << endl; //Ha de donar 16
+
+}
+```
 
 ## Exercicis per a fer avui
 
@@ -60,6 +125,8 @@ int main(){
 ## Resum de la sessió
 
 Contingut:
+- Petita introducció a recursivitat
+- Exemples de recursivitat
 - Exercicis
 
 
