@@ -59,6 +59,8 @@ int main() {
 
 ### Exemple amb break
 
+Si bé està bé saber com funciona el **break** us recordo que l'ús a l'assignatura de PRO1 **ESTÀ PROHIBIT**.
+
 ```c++
 
 #include <iostream>
