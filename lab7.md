@@ -1,5 +1,42 @@
 # Apunts setena classe PRO1
 
+## Exemples recursivitat
+
+```c++
+#include <iostream>
+using namespace std;
+
+void es_creixent(int n){
+  if (n!= 1) es_creixent(n-1);
+  cout << n;
+  return;
+}
+void es_decreixent(int n){
+  if (n == 0) return;
+  else{
+    cout << n;
+    es_decreixent(n-1);
+  }
+}
+
+void es_decreixent2(int n){
+  if (n != 0){
+    cout << n;
+    es_decreixent(n-1);
+  }
+}
+
+
+int main(){
+  es_creixent(10);
+  cout << endl;
+  es_decreixent(10);
+  cout << endl;
+  es_decreixent2(10);
+  cout << endl;
+}
+
+```
 
 
 ## Exercicis per a fer avui
