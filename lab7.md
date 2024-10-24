@@ -38,9 +38,41 @@ int main(){
 
 ```
 
+### Exercicis exemple *P24381*
+
+```c++
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void cross(int n, char c){
+//PRE: n>3 i n senar
+//POST: creu amb n línies escrites per cout amb caracter c
+for(int i = 0; i < n; ++i){
+  if(i == n/2){
+    for(int j = 0; j < n; ++j){
+      cout << c;
+    }
+    cout << endl;
+  }
+  else{
+    for(int j = 0; j < n; ++j){
+      if(j == n/2)cout << c;
+      else if(j < n/2) cout << ' ';
+    }
+    cout << endl;
+  }
+}
+
+int main() {
+  cross(5, 'X');
+}
+
+```
+
 
 ## Exercicis per a fer avui
-
 
 ### Factorial recursiu  *P12509*
 
