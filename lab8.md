@@ -29,14 +29,14 @@ Quan es passa un argument per referència, es passa l'adreça de la variable ori
 ```cpp
 #include <iostream>
 
-void incrementarPerReferència(int& num) {
+void incrementarPerReferencia(int& num) {
     num++;  // Incrementa el valor original de num
     cout << "Dins de la funció (per referència): " << num << endl;
 }
 
 int main() {
     int x = 5;
-    incrementarPerReferència(x);  // Es passa la referència de x
+    incrementarPerReferencia(x);  // Es passa la referència de x
     cout << "Fora de la funció: " << x << endl;  // x ha estat modificat
 }
 ```
