@@ -96,7 +96,7 @@ Quan es passa un paràmetre per referència, podem utilitzar const per garantir 
 #include <iostream>
 
 void mostrarValor(const int& x) {
-    std::cout << "El valor passat per referència és: " << x << std::endl;
+    cout << "El valor passat per referència és: " << x << endl;
 
     // x = 20;  // Error! No es pot modificar x perquè és const
 }
@@ -112,7 +112,7 @@ En aquest cas, el paràmetre `x` es passa per referència i es declara com a `co
 
 ## Què és un vector?
 
-Un **vector** és una estructura de dades dinàmica proporcionada per la llibreria estàndard de C++ (`std::vector`). Els vectors permeten emmagatzemar un conjunt d'elements del mateix tipus i ajustar la seva mida automàticament durant l'execució del programa.
+Un **vector** és una estructura de dades dinàmica proporcionada per la llibreria estàndard de C++ (`vector`). Els vectors permeten emmagatzemar un conjunt d'elements del mateix tipus i ajustar la seva mida automàticament durant l'execució del programa.
 
 Característiques principals:
 - **Redimensionament automàtic**: La mida d'un vector pot augmentar o disminuir segons calgui.
