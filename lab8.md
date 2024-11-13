@@ -2,7 +2,7 @@
 
 ## Passar per valor i per referència en funcions en C++
 
-En C++, es poden passar arguments a les funcions de dues maneres principals: **per valor** i **per referència**. A continuació s'explica cada mètode i es mostren exemples.
+En C++, es poden passar arguments a les funcions de dues maneres principals: **per valor** i **per referència**. 
 
 ### Passar per valor
 
