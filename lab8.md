@@ -129,7 +129,7 @@ Els vectors en C++ poden emmagatzemar elements de qualsevol tipus de dades, incl
 ```cpp
 vector<int> enters = {1, 2, 3, 4, 5}; //Vector de tipus int
 vector<bool> booleans = {true, false, true, true}; //Vector de tipus bool
-vector<char> caràcters = {'a', 'b', 'c', 'd'}; //Vector de tipus char, fixeu-vos que una string és una cadena de caràcters
+vector<char> caracters = {'a', 'b', 'c', 'd'}; //Vector de tipus char, fixeu-vos que una string és una cadena de caràcters
 vector<string> cadenes = {"Hello", "World", "en", "C++"};// Vector de tipus string
 
 ```
