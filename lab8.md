@@ -2,7 +2,14 @@
 
 ## Passar per valor i per referència en funcions en C++
 
-En C++, es poden passar arguments a les funcions de dues maneres principals: **per valor** i **per referència**. 
+En C++, es poden passar arguments a les funcions de dues maneres principals: **per referència** i **per valor**. 
+
+<div style="text-align: center;">
+  <video width="560" height="300" controls>
+    <source src="https://img-9gag-fun.9cache.com/photo/az9pOnp_460svvp9.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ### Passar per valor
 
@@ -63,7 +70,7 @@ Quan declarem una variable local com a `const`, no podrem modificar el seu valor
 
 int main() {
     const int x = 10; // x és constant
-    cut << "El valor de x és: " << x << endl;
+    cout << "El valor de x és: " << x << endl;
 
     // x = 20;  // Error! No es pot modificar una variable constant
 }
@@ -127,10 +134,10 @@ Els vectors en C++ poden emmagatzemar elements de qualsevol tipus de dades, incl
 #### Vectors de tipus primitiu:
 
 ```cpp
-vector<int> enters = {1, 2, 3, 4, 5}; //Vector de tipus int
-vector<bool> booleans = {true, false, true, true}; //Vector de tipus bool
-vector<char> caracters = {'a', 'b', 'c', 'd'}; //Vector de tipus char, fixeu-vos que una string és una cadena de caràcters
-vector<string> cadenes = {"Hello", "World", "en", "C++"};// Vector de tipus string
+vector<int> enters; //Vector de tipus int [1, 2, 3, 4, 5]
+vector<bool> booleans; //Vector de tipus bool [true, false, true, true]
+vector<char> caracters; //Vector de tipus char, fixeu-vos que una string és una cadena de caràcters ['a', 'b', 'c', 'd']
+vector<string> cadenes;// Vector de tipus string ["Charmander", "Bulbasaur", "Squirtle", "Pikachu"]
 
 ```
 
@@ -151,11 +158,14 @@ vector<int> v(5); // Un vector de 5 elements inicialitzats a 0
 vector<int> v(5, 0); // Un vector de 5 elements inicialitzats a 0
 ```
 
-#### Inicialització amb una llista de valors
+#### Inicialització amb valors
 
 ```cpp
 
-vector<int> v = {1, 2, 3, 4, 5}; // Un vector amb 5 elements específics
+vector<int> v(3); // Un vector amb 3 elements específics
+v[0] = 1;
+v[1] = 2;
+v[2] = 3
 ```
 
 #### Inicialització mitjançant un altre vector
@@ -168,7 +178,7 @@ vector<int> v2(v); // Crea un nou vector v2 amb els mateixos elements que v
 ### Com s'esborra un vector?
 
 ```cpp
-vector<int> v = {1, 2, 3};
+vector<int> v; // Suposem que conté [1, 2, 3]
 v.clear(); // El vector ara està buit
 ```
 
@@ -176,7 +186,7 @@ v.clear(); // El vector ara està buit
 1. **size()**: Retorna la mida actual del vector (el nombre d'elements):
    
 ```cpp
-vector<int> v = {1, 2, 3};
+vector<int> v; // Suposem que conté [1, 2, 3]
 cout << "Mida del vector: " << v.size() << endl; // Mostra: 3
 
 ```
@@ -198,7 +208,12 @@ if (v.empty()) {
 #include <vector>
 
 int main() {
-    vector<int> v = {1, 2, 3, 4, 5};
+    vector<int> v(5);
+	v[0] = 1;
+	v[1] = 2;
+	v[2] = 3;
+	v[3] = 4;
+	v[4] = 5;
 
     for (int i = 0; i < v.size(); ++i) {
         cout << v[i] << ' ';
@@ -225,7 +240,12 @@ Volem tenir això:
 #include <vector>
 
 int main() {
-    vector<int> v = {1, 2, 3, 4, 5};
+    vector<int> v(5);
+	v[0] = 1;
+	v[1] = 2;
+	v[2] = 3;
+	v[3] = 4;
+	v[4] = 5;
     bool primer = true;
     for (int i = 0; i < v.size(); ++i) {
         if (primer){
@@ -342,5 +362,18 @@ int main() {
 
 ```
 
+### EXTRA: Per què no podem fer `vector<int> v = {1, 2, 3};` amb la versió de p1++ de PRO1?
+
+En versions antigues de C++, com C++98 i C++03, la sintaxi `vector<int> v = {1, 2, 3};` no és vàlida perquè aquestes versions no suporten l'ús de *llistes d'inicialització* amb claus `{}` per a inicialitzar contenidors com `vector`.
+
+A pro1 usem les següents funcions incloses dins a un alias per a compilar:
+`alias p1++="g++ -ansi -O2 -DNDEBUG -D_GLIBCXX_DEBUG -Wall -Wextra -Werror -Wno-uninitialized -Wno-sign-compare -Wshadow"`
+
+Compilem fent: `p1++ program.cc -o program.x`, però el que passa internament substitueix el p1++ per l'alias que li hem assignat abans.
+
+L'opció ``-ansi`` força el compilador a utilitzar C++98 (o més específicament, un subconjunt de C++03 sense extensions GNU). Això desactiva totes les característiques introduïdes en C++11 i versions posteriors, incloent-hi les llistes d'inicialització.
+
+- Les *llistes d'inicialització* es van introduir a C++11 amb el concepte d'*initializer lists* (veure `initializer_list`).
+- En C++98 i C++03, només es podien inicialitzar vectors utilitzant els seus constructors o assignant valors de forma explícita després de declarar-los.
 
 ###### Alexandre Gràcia Calvo
