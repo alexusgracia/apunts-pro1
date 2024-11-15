@@ -18,7 +18,7 @@ Quan es passa un argument per valor, es crea una còpia de l'argument original d
 #include <iostream>
 
 void incrementarPerValor(int num) {
-    num++;  // Incrementa la còpia local de num
+    num = 57;  // Canviem el valor de num
     cout << "Dins de la funció (per valor): " << num << endl;
 }
 
@@ -30,13 +30,14 @@ int main() {
 ```
 
 ### Passar per referència
-Quan es passa un argument per referència, es passa l'adreça de la variable original. Això vol dir que qualsevol canvi fet sobre el paràmetre dins de la funció afectarà directament la variable original.
+Quan es passa un argument per referència, es passa l'adreça de la variable original. Això es fa afegint `&` entre el tipus de paràmetre i el nom del paràmetre. Per exemple: int& num.
+Això implica que qualsevol canvi fet sobre el paràmetre dins de la funció afectarà directament la variable original.
 
 ```cpp
 #include <iostream>
 
-void incrementarPerReferencia(int& num) {
-    num++;  // Incrementa el valor original de num
+void incrementarPerReferencia(int& num) { // fixeu-vos l'ús de & !!!!!!
+    num = 57;  // Canviem el valor de num
     cout << "Dins de la funció (per referència): " << num << endl;
 }
 
