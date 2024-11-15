@@ -4,14 +4,6 @@
 
 En C++, es poden passar arguments a les funcions de dues maneres principals: **per referència** i **per valor**. 
 
-<div style="text-align: center;">
-  <video width="560" height="300" controls>
-    <source src="https://img-9gag-fun.9cache.com/photo/az9pOnp_460svvp9.webm" type="video/webm">
-    Si no es veu aquest vídeo, prem aquí: ![Meme coffee](https://img-9gag-fun.9cache.com/photo/az9pOnp_460svvp9.webm)
-  </video>
-</div>
-
-
 ![https://img-9gag-fun.9cache.com/photo/az9pOnp_460svvp9.webm](/imatges/coffee.webm)
 
 
