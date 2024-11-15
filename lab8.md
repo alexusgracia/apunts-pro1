@@ -12,7 +12,7 @@ En C++, es poden passar arguments a les funcions de dues maneres principals: **p
 </div>
 
 
-![Video](/imatges/coffee.webm)
+![https://img-9gag-fun.9cache.com/photo/az9pOnp_460svvp9.webm](/imatges/coffee.webm)
 
 
 ### Passar per valor
