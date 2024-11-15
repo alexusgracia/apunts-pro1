@@ -4,8 +4,11 @@
 
 En C++, es poden passar arguments a les funcions de dues maneres principals: **per referència** i **per valor**. 
 
-![https://repo.fib.upc.edu/alexandre.gracia/apunts-pro1/-/blob/main/assets/coffee.webm](/assets/coffee.webm)
-s
+<div style="text-align: center;">
+  ![https://repo.fib.upc.edu/alexandre.gracia/apunts-pro1/-/blob/main/assets/coffee.webm](/assets/coffee.webm)
+</div>
+
+
 
 ### Passar per valor
 
