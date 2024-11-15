@@ -7,9 +7,13 @@ En C++, es poden passar arguments a les funcions de dues maneres principals: **p
 <div style="text-align: center;">
   <video width="560" height="300" controls>
     <source src="https://img-9gag-fun.9cache.com/photo/az9pOnp_460svvp9.webm" type="video/webm">
-    Your browser does not support the video tag.
+    Si no es veu aquest vídeo, prem aquí: ![Meme coffee](https://img-9gag-fun.9cache.com/photo/az9pOnp_460svvp9.webm)
   </video>
 </div>
+
+
+![Video](/imatges/coffee.webm)
+
 
 ### Passar per valor
 
