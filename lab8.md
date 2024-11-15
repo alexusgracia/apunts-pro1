@@ -276,7 +276,7 @@ int main() {
     while (cin >> n){
 	vector <int> v(n);
 	for (int i = 0; i < n; ++i) cin >> v[i];
-	int primer = true;
+	bool primer = true;
 	for (int i = n - 1; i >= 0; --i){
 	    if (primer){
 	    cout << v[i];
