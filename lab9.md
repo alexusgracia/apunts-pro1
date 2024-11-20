@@ -67,7 +67,7 @@ int j = 3;
 mat[i][j] //O mat[2][3]
 ```
 
-### Exemple resolt: Volem llegir una matriu i imprimir-la sense usar funcions
+### Exemple: Volem llegir una matriu i imprimir-la sense usar funcions
 
 ```c++
 #include <iostream>
@@ -101,7 +101,7 @@ int main() {
 ```
 
 
-### Exemple resolt: Volem llegir una matriu i imprimir-la usant funcions
+### Exemple: Volem llegir una matriu i imprimir-la usant funcions
 
 ```c++
 #include <iostream>
