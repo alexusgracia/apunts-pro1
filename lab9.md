@@ -155,7 +155,7 @@ int main() {
     cin >> x >> y >> z; // Dimensions de la matriu
 
     // Crear una matriu 3D
-    vector<vector<vector<int>>> mat(x, vector<vector<int>>(y, vector<int>(z)));
+    vector<vector<vector<int> > > mat(x, vector<vector<int> >(y, vector<int>(z)));
 
     // Llegir els valors de la matriu
     for (int i = 0; i < x; ++i) {
