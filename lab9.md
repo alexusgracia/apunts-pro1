@@ -37,8 +37,9 @@ int main() {
         cout << endl;
     }
 }
-``````
-
+```
+### Què és el `typedef`?
+El `typedef` s'utilitza per crear un alias o nom alternatiu per a un tipus de dades en C++, millorant la llegibilitat i mantenibilitat del codi. 
 
 ### Declaració i inicialització d'una matriu usant typedef
 
@@ -46,9 +47,7 @@ Una matriu en C++ es declara com un vector n-dimensional, especificant el nombre
 
 **Exemple 1:**
 ```c++
-
 typedef vector< vector<int> > Matriu; //IMPORTANT: Els espais entre el símbol '>'
-
 ```
 
 **Exemple 2:**
