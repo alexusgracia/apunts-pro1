@@ -3,7 +3,7 @@
 
 ## Introducció a les matrius en C++
 
-Les **matrius** són una estructura fonamental per emmagatzemar dades en format bidimensional, similar a una taula amb **files** i **columnes**. Són molt útils per resoldre problemes relacionats amb geometria, gràfics o càlculs numèrics.
+Les **matrius** són una estructura fonamental per emmagatzemar dades en format multidimensional, similar a una taula amb **files** i **columnes**. Són molt útils per resoldre problemes relacionats amb geometria, gràfics o càlculs numèrics.
 
 Cal tenir en compte que una matriu és un vector de vectors, per tant podem tenir n-dimensions.
 
