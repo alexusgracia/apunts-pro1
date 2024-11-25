@@ -207,7 +207,6 @@ Contingut:
 - Jutge
 - Configuració [*clang-format*](https://pro1.cs.upc.edu/recursos/clang-format)
 - Exercicis
-		https://pro1.cs.upc.edu/pdfs/LAB-ConfigurarEntornWindowsACasa.pdf
 
 > **IMPORTANT!!** No us oblideu de [Configurar windows a casa](https://pro1.cs.upc.edu/pdfs/LAB-ConfigurarEntornWindowsACasa.pdf)
 
