@@ -16,8 +16,8 @@ La **cerca dicotòmica**, també coneguda com a **cerca binària**, és un algor
    \]
 4. **Comparació**:
    - Si l’element al punt `mig` és el que busquem, retornem la seva posició.
-   - Si l’element al punt `mig` és més gran que el valor buscat, descartem la meitat superior.
-   - Si l’element al punt `mig` és més petit que el valor buscat, descartem la meitat inferior.
+   - Si l’element al punt `mig` és més gran que el valor buscat, descartem la `meitat superior`.
+   - Si l’element al punt `mig` és més petit que el valor buscat, descartem la `meitat inferior`.
 5. **Repetició**: Continuem dividint l’interval fins que l’element es trobi o fins que `inici > final`.
 
 ## Complexitat
