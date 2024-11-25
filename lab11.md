@@ -25,7 +25,6 @@ La **cerca dicotòmica**, també coneguda com a **cerca binària**, és un algor
 - **Millor cas**: \(O(1)\), si trobem l’element a la primera comparació.
 - **Memòria**: La cerca dicotòmica només requereix espai constant \(O(1)\).
 
-
 ### Cerca dicotòmica *P81966*
 
 ```cpp
@@ -33,13 +32,13 @@ La **cerca dicotòmica**, també coneguda com a **cerca binària**, és un algor
 #include <vector>
 using namespace std;
 
-// void retorna(const vector<double>& v){
-//     for (int i = 0; i < v.size(); ++i){
-//         cout << v[i];
-//     }
-//     cout << endl;
-//     return;
-// }
+void retorna(const vector<double>& v){
+    for (int i = 0; i < v.size(); ++i){
+        cout << v[i];
+    }
+    cout << endl;
+    return;
+}
 
 int posicio(double x, const vector<double>& v, int esq, int dre){
     
@@ -65,7 +64,7 @@ int main(){
     double nombre;
     cin >> nombre;
     cout << posicio(nombre, v, 0, n);
-//     retorna(v);
+    //retorna(v);
 }
 ```
 
@@ -121,8 +120,6 @@ int main(){
 #include <vector>
 using namespace std;
 
-
-
 const int MAX = 1000;
 
 void marca_multiples(int i, vector<bool>& garbell){
@@ -141,7 +138,6 @@ vector<bool> precalcula_garbell(int n){
     }
 	return garbell;
 }
-
 
 int main(){
     vector<bool> es_primer = precalcula_garbell(MAX*MAX + 1);
@@ -180,7 +176,6 @@ void insereix(vector<double>& v) {
 	// Col·loquem l'element a la seva posició correcta
 	v[i + 1] = element;
 }
-
 ```
 
 ###### Alexandre Gràcia Calvo
