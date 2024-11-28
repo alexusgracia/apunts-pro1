@@ -180,6 +180,23 @@ int main() {
 }
 ```
 
+### Com podem assegurar-nos que accedim a posicions vàlides de la matriu?
+Ho farem amb una funció que ens retornarà si és una posició vàlida
+
+```cpp
+bool pos_valida(const Matriu &m, int fil, int col){
+    int pos_fila_min, pos_fila_max, pos_col_min, pos_col_max;
+    pos_fila_min = pos_col_min = 0;
+    pos_fila_max = m.size()-1;
+    pos_col_max = m[0].size()-1;
+    if(fil>=pos_fila_min and fil<=pos_fila_max and col>=pos_col_min and col<=pos_col_max){
+        return true;
+    }
+    else return false;
+
+}
+```
+
 ## Exercicis per a fer avui
 
 
