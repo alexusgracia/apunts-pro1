@@ -323,7 +323,7 @@ void insert_sort(vector<int>& v) {
 ```
 
 ### Sort time
-Solució del professor Jorge Castro per a la comparació de temps per inserció, quick sort i mergesort
+Solució del professor Jorge Castro per a la comparació de temps per inserció, quick sort i mergesor. Com a entrada té el document [in.txt](assets/in.txt)
 
 ```c++
 #include <iostream> 
