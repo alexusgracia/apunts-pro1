@@ -63,9 +63,64 @@ int main(){
     }
     double nombre;
     cin >> nombre;
-    cout << posicio(nombre, v, 0, n);
+    cout << posicio(nombre, v, 0, n-1);
     //retorna(v);
 }
+```
+
+### Cerca dicotòmica iterativa amb return i sense booleà
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+// pre: n > 0
+// post: retorna un vector de tamanno n leido de la entrada
+vector<int> lee_vector(int n) {
+	vector<int> v(n);
+	for (int i = 0; i < n; ++i) {
+		cin >> v[i];
+	}
+	return v;
+}
+
+// pre:---
+// post: valores del vector escritos en output
+void escribir_vector(const vector<int>& v) {
+	int n = v.size();
+	cout << v[0];
+	for (int i = 1; i < n; ++i) {
+		cout << ' ' << v[i];
+	}
+	cout << endl;
+}
+
+int posicio(int x, const vector<int>& v, int esq, int dre) {
+	int pos;
+	while (esq <= dre) {
+		pos = (esq + dre) / 2;
+		if (x < v[pos]) {
+			dre = pos - 1;
+		} else if (x > v[pos]) {
+			esq = pos + 1;
+		} else {
+			return pos;
+		}
+	}
+	return -1;
+}
+
+int main() {
+	int n;
+	cin >> n;
+	vector<int> v = lee_vector(n);
+	int			elem_a_cercar;
+	cin >> elem_a_cercar;
+	cout << posicio(elem_a_cercar, v, 0, v.size() - 1) << endl;
+	;
+}
+
 ```
 
 ### Anagrames *P71916*
