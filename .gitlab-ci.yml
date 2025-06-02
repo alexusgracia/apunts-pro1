@@ -5,21 +5,20 @@ stages:
   - deploy
 
 before_script:
-  - pip install sphinx sphinx-rtd-theme
+  - pip install sphinx myst-parser sphinx-rtd-theme
 
 build:
   stage: build
   script:
-    - sphinx-build -b html docs/source docs/build
+    - sphinx-build -b html docs public
   artifacts:
     paths:
-      - docs/build
+      - public
 
 pages:
   stage: deploy
   script:
-    - mkdir -p public
-    - cp -r docs/build/* public/
+    - echo "Deploying to GitLab Pages"
   artifacts:
     paths:
       - public
