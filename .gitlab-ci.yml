@@ -20,6 +20,9 @@ build:
 
 pages:
   stage: deploy
+  tags:
+    # maven tag is for the runner, should not be maven
+    - maven
   script:
     - echo "Deploying to GitLab Pages"
   artifacts:
