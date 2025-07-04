@@ -13,7 +13,7 @@ build:
     # maven tag is for the runner, should not be maven
     - maven
   script:
-    - sphinx-build -b html docs public
+    - sphinx-build -b html . public
   artifacts:
     paths:
       - public

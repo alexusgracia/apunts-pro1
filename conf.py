@@ -2,7 +2,7 @@ import os
 import sys
 
 # Añadir raíz del proyecto al path
-sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 project = 'Apunts PRO1'
