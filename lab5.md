@@ -1,6 +1,6 @@
 # Apunts quinta classe PRO1
 
-# Petita introducció a funcions
+## Petita introducció a funcions
 
 Una **funció** en C++ és un bloc de codi que realitza una tasca específica. 
 
@@ -84,7 +84,7 @@ int main(){
 }
 ```
 
-# Exercici nombres estranys amb funcions:
+## Exercici nombres estranys amb funcions:
 ```c++
 #include <iostream>
 using namespace std;
