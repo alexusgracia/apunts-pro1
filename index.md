@@ -4,7 +4,7 @@ Aquesta documentació conté els laboratoris de PRO1.
 
 ## Contingut
 
-- [Planificació](planificacio.md)
+- [Planificació](planificacio25-26.md)
 - [Laboratori 1](lab1.md)
 - [Laboratori 2](lab2.md)
 - [Laboratori 3](lab3.md)
