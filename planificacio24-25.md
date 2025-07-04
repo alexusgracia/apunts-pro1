@@ -1,3 +1,6 @@
+
+# Planificació curs 2024-2025
+
 ## Lab 1
 - Control C102A	 	P1
 - Quants segons són?	P70955	P1
