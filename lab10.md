@@ -74,7 +74,7 @@ int main() {
 }
 ```
 Sortida del programa:
-```txt
+```text
 Nom: Joan
 Edat: 25
 Altura: 1.8 m
@@ -148,12 +148,12 @@ int main() {
 
 Entrada:
 
-```txt
+```text
 Introdueix l'amplada del rectangle: 5
 Introdueix l'altura del rectangle: 3
 ```
 Sortida:
-```txt
+```text
 Àrea: 15
 Perímetre: 16
 ```
