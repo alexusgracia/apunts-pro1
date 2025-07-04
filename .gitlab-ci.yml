@@ -9,6 +9,9 @@ before_script:
 
 build:
   stage: build
+  tags:
+    # maven tag is for the runner, should not be maven
+    - maven
   script:
     - sphinx-build -b html docs public
   artifacts:
