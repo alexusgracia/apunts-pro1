@@ -376,4 +376,4 @@ L'opció ``-ansi`` força el compilador a utilitzar C++98 (o més específicamen
 - Les *llistes d'inicialització* es van introduir a C++11 amb el concepte d'*initializer lists* (veure `initializer_list`).
 - En C++98 i C++03, només es podien inicialitzar vectors utilitzant els seus constructors o assignant valors de forma explícita després de declarar-los.
 
-###### Alexandre Gràcia Calvo
+Alexandre Gràcia Calvo

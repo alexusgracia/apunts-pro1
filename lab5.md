@@ -199,4 +199,4 @@ Contingut:
 - Exercicis
 
 
-###### Alexandre Gràcia Calvo
+Alexandre Gràcia Calvo

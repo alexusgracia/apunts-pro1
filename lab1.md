@@ -13,10 +13,10 @@ Els '#' són niuables
 
 Exemple:
 
-### Títol 2
-#### Títol 3
-##### Títol 4
-###### Títol 5
+## Títol 2
+### Títol 3
+#### Títol 4
+##### Títol 5
 
 Negreta: **Hola**
 
@@ -110,7 +110,7 @@ g++ hello_world.cc -o hello_world.x     # Compilar amb el compilador general
 ./hello_world.x                         # Executar el programa
 ```
 ```c++
-# Contingut del programa hello_world.cc
+#Contingut del programa hello_world.cc
 #include iostream
 using namespace std
 int main() {
@@ -211,5 +211,5 @@ Contingut:
 > **IMPORTANT!!** No us oblideu de [Configurar windows a casa](https://pro1.cs.upc.edu/pdfs/LAB-ConfigurarEntornWindowsACasa.pdf)
 
 
-###### Alexandre Gràcia Calvo
+Alexandre Gràcia Calvo
 

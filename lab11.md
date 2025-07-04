@@ -745,4 +745,4 @@ void insereix(vector<double>& v) {
 }
 ```
 
-###### Alexandre Gràcia Calvo
+Alexandre Gràcia Calvo

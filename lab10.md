@@ -332,4 +332,4 @@ int main() {
 }
 ```
 
-###### Alexandre Gràcia Calvo
+Alexandre Gràcia Calvo
