@@ -10,8 +10,7 @@ before_script:
 build:
   stage: build
   tags:
-    # maven tag is for the runner, should not be maven
-    - maven
+    - sphinx
   script:
     - sphinx-build -b html . public
   artifacts:
@@ -21,8 +20,7 @@ build:
 pages:
   stage: deploy
   tags:
-    # maven tag is for the runner, should not be maven
-    - maven
+    - sphinx
   script:
     - echo "Deploying to GitLab Pages"
   artifacts:
