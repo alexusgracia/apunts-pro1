@@ -21,6 +21,8 @@ pages:
   stage: deploy
   tags:
     - sphinx
+  dependencies:
+    - build
   script:
     - echo "Deploying to GitLab Pages"
   artifacts:
