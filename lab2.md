@@ -138,6 +138,10 @@ Dit d’una altra manera: els operadors lògics ens permeten prendre decisions e
     bool b = not a; // false
     ```
 
+    | a     | not a    |
+    |-------|-------|
+    | **true**  | false |
+    | false | **true**  |
 
 4. Exemple combinat
     ```c++
@@ -180,8 +184,8 @@ En C++, els noms de les variables han de complir unes certes regles i tenen algu
     bool es_cadira; //✅
     bool CadiraGran; //✅
     bool es_una cadira_molt_gran; //⚠️
-    bool es_una_cadira_tremendament_gran;👎
-    bool esunacadiraqueesenormeinoemcapalhabitacio;❌
+    bool es_una_cadira_tremendament_gran;//👎
+    bool esunacadiraqueesenormeinoemcapalhabitacio;//❌
     ```
 
 5. **Caràcters especials:**
