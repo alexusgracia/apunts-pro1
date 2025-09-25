@@ -200,19 +200,19 @@ En C++, els noms de les variables han de complir unes certes regles i tenen algu
     Per exemple, per a un nombre auxiliar, li podem dir aux.
     D'altra banda no volem errors causats per complexitat com per exemple:
     ```c++
-    bool major_edat = False;
+    bool major_edat = false;
     if(not edat < 18){
-        major_edat = True;
+        major_edat = true;
     }
     ```
     Alternativa:
     ```c++
     bool major_edat;
     if(edat < 18){
-        major_edat = False;
+        major_edat = false;
     }
     else{
-        major_edat = True;
+        major_edat = true;
     }
     ```
 
