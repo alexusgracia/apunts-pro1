@@ -11,7 +11,7 @@
 Una operació simple és aquella que només involucra un sol operador i dos valors (o operands), i retorna un resultat immediat.
 ```c++
 bool major = 5 > 3   // true
-bool igual 4 == 4  // true
+bool igual = 4 == 4  // true
 bool diferent =7 != 2  // true
 ```
 
