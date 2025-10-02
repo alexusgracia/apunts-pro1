@@ -192,6 +192,49 @@ int main(){
 }
 ```
 
+## Interessos (2) *P66529_ca*
+
+```c++
+#include <iostream>
+using namespace std;
+
+/*
+Hem de calcular: (1+i/(100*n))^n
+*/
+
+int main() {
+    double i;
+    string frequencia;
+    cin >> i >> frequencia;
+
+    int n;
+    if (frequencia == "setmanal") n = 52;
+    else if (frequencia == "mensual") n = 12;
+    else if (frequencia == "trimestral") n = 4;
+    else if (frequencia == "semestral") n = 2;
+    else n = 1; // anual
+
+    double factor = 1 + (i / 100.0) / n;
+    double resultat = 1.0;
+
+    /*
+    #include <cmath>
+    Alternativa: double tae = pow(1 + (i/100.0)/n, n) - 1;
+    */
+    for (int k = 0; k < n; ++k) {
+        resultat *= factor;
+    }
+
+    double tae = resultat - 1;
+
+    cout.setf(ios::fixed);
+    cout.precision(4);
+    cout << tae * 100 << endl;
+
+}
+
+```
+
 
 ## Resum de la sessió
 
