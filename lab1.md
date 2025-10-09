@@ -104,8 +104,6 @@ c = 12;
 cd ~
 mkdir pro1                              # Crear carpeta
 cd pro1                                 # Canviar a la carpeta
-touch hello_world.cc                    # Crear un fitxer
-p1++ hello_world.cc -o hello_world.x    # Compilar amb el compilador de pro1
 g++ hello_world.cc -o hello_world.x     # Compilar amb el compilador general
 ./hello_world.x                         # Executar el programa
 ```
