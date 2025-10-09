@@ -7,8 +7,8 @@ Exemples:
 
 ```bash
 # En aquest exemple el ';' l'usem per a passar múltiples comandes a la terminal, compilant i executant al mateix temps 
-p1++ test.cc -o test.x; ./test.x < input.in   # Compilem i executem en una línia i la sortida l'escriu per pantalla
-p1++ test.cc -o test.x; ./test.x < input.in > output.out   # Compilem i executem en una línia i la sortida l'escriu en un fitxer
+g++ test.cc -o test.x; ./test.x < input.in   # Compilem i executem en una línia i la sortida l'escriu per pantalla
+g++ test.cc -o test.x; ./test.x < input.in > output.out   # Compilem i executem en una línia i la sortida l'escriu en un fitxer
 ```
 
 ## Recorregut 
