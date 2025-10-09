@@ -297,7 +297,7 @@ int main()
 ### Tauler d'escacs (1) *P42280_ca*
 En aquest exemple el tractem com si fos entrades infinites:
 
-### Alternativa 1
+#### Alternativa 1
 ```c++
 #include <iostream>
 using namespace std;
@@ -317,7 +317,7 @@ int main(){
 }
 ```
 
-### Alternativa 2
+#### Alternativa 2
 
 ```c++
 #include <iostream>
@@ -339,7 +339,62 @@ int main()
     }
     cout << suma << endl;
 }
-
 ```
+
+
+###  Número del revés en hexadecimal *P60816_ca*
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a;
+    cin >> a;
+    string resultat = "";
+    if (a == 0)
+    {
+        resultat = "0";
+    }
+    while (a > 0)
+    {
+        int residu = a % 16;
+        if (residu > 9)
+        {
+            if (residu == 10)
+                resultat = resultat + 'A';
+            else if (residu == 11)
+                resultat = resultat + 'B';
+            else if (residu == 12)
+                resultat = resultat + 'C';
+            else if (residu == 13)
+                resultat = resultat + 'D';
+            else if (residu == 14)
+                resultat = resultat + 'E';
+            else if (residu == 15)
+                resultat = resultat + 'F';
+        }
+        else
+        {
+            resultat = resultat + char(residu + '0');
+        }
+        a = a / 16;
+    }
+    cout << resultat << endl;
+    cout << resultat.length() << endl;
+    
+    // Si volgúessim hexadecimal correcte ( i no al revés)
+    /*
+
+    for (int i = 0; i < resultat.length(); ++i)
+    {
+        cout << resultat[resultat.length() - i - 1];
+    }
+    cout << endl;
+    */
+}
+```
+
 
 Alexandre Gràcia Calvo
