@@ -226,15 +226,17 @@ int main(){
     while (cin >> n){
         
         if (n == 'n') --y;
-        if (n == 's') ++y;
-        if (n == 'e') ++x;
-        if (n == 'o') --x;
+        else if (n == 's') ++y;
+        else if (n == 'e') ++x;
+        else if (n == 'o') --x;
+        else cout << "No hauria de passar mai" << endl;
     }
     cout << "(" << x << ", " << y << ")" << endl;
 }
 ```
 
 ### I-èsim (1) *P39225_ca*
+En aquest exemple el tractem com si fos entrades infinites:
 
 ```c++
 #include <iostream>
@@ -255,6 +257,41 @@ int main() {
     if (posicio)    cout << "A la posicio " << n << " hi ha un " << aux << "." << endl;
     else cout << "Posicio incorrecta." << endl;  
 }
+```
+
+En aquesta alternativa el tractem com si fos entrada amb sentinella:
+
+```c++
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int i, valor;
+    cin >> i >> valor;
+    bool trobat = false;
+    int pos = 0;
+    while (valor != -1 and not trobat)
+    {
+        ++pos;
+        if (i == pos)
+            trobat = true;
+        else
+        {
+            cin >> valor;
+        }
+    }
+    if (trobat)
+    {
+        cout << "A la posicio " << i << " hi ha un " << valor << '.' << endl;
+    }
+    else
+    {
+        cout << "Not trobat" << endl;
+    }
+}
+
 ```
 
 Alexandre Gràcia Calvo
