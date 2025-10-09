@@ -294,4 +294,52 @@ int main()
 
 ```
 
+### Tauler d'escacs (1) *P42280_ca*
+En aquest exemple el tractem com si fos entrades infinites:
+
+### Alternativa 1
+```c++
+#include <iostream>
+using namespace std;
+
+int main(){
+    int f, c;
+    cin >> f >> c;
+    int total = 0;
+    for(int i = 0; i < f; ++i){
+        char nombre;
+        for (int j = 0; j < c; ++j){
+	    cin >> nombre;
+            total =  total + (nombre-'0');
+        }
+    }
+    cout << total << endl;
+}
+```
+
+### Alternativa 2
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int f, c;
+    cin >> f >> c;
+    int suma = 0;
+    for (int i = 0; i < f; ++i)
+    {
+        string s;
+        cin >> s;
+        for (int j = 0; j < s.size(); ++j)
+        {
+            suma = suma + s[j] - '0';
+        }
+    }
+    cout << suma << endl;
+}
+
+```
+
 Alexandre Gràcia Calvo
