@@ -1,4 +1,4 @@
-# Apunts sisena classe PRO1
+# Apunts cinquena classe PRO1
 
 ## Exemple d'iteratiu que farem en recursiu
 ### Factorial iteratiu *P57474*
