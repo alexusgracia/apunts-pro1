@@ -12,11 +12,11 @@
 
 ## 📄 Llicència
 
-Aquest contingut és **lliure i obert**, especialment recopil·lat i/o creat per a l’estudiantat de Programació 1. Pots reutilitzar-lo, adaptar-lo i compartir-lo respectant els drets d’autoria.
+Aquest contingut és **lliure i obert**, especialment recopil·lat i/o creat per a l’estudiantat de Programació 1 de la FIB. Pots reutilitzar-lo, adaptar-lo i compartir-lo respectant els drets d’autoria.
 
 ---
 
 ## 🌐 Web final
 
-Pots consultar la versió navegable a (actualment no funciona encara):  
+Pots consultar la versió navegable a (actualment no funciona):  
 🔗 [https://alexandre.gracia.repo.fib.upc.edu/apunts-pro1/](https://alexandre.gracia.repo.fib.upc.edu/apunts-pro1/)

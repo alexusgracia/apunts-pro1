@@ -117,11 +117,4 @@ int main() {
 }
 ```
 
-
-## Resum de la sessió
-
-Contingut:
-- Exercicis
-
-
 Alexandre Gràcia Calvo
