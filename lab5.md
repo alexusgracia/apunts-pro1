@@ -169,21 +169,21 @@ using namespace std;
 int main () {
     char x,y,z;
     int pos=0;
-    int a=0,b=0,c=0,d=0, e=0,f=0,g=0,h=0;
+    int aaa=0,aab=0,aba=0,abb=0, baa=0,bab=0,bba=0,bbb=0;
     bool found=false; 
     cin >> x >> y >> z;
 
     while (not found){
-        if (x=='a' and y=='a' and z=='a') a=a+1;
-        else if (x=='a' and y=='a' and z=='b') b=b+1;
-        else if (x=='a' and y=='b' and z=='a') c=c+1;
-        else if (x=='a' and y=='b' and z=='b') d=d+1;
-        else if (x=='b' and y=='a' and z=='a') e=e+1;
-        else if (x=='b' and y=='a' and z=='b') f=f+1;
-        else if (x=='b' and y=='b' and z=='a') g=g+1;
-        else if (x=='b' and y=='b' and z=='b') h=h+1;
+        if (x=='a' and y=='a' and z=='a') aaa=aaa+1;
+        else if (x=='a' and y=='a' and z=='b') aab=aab+1;
+        else if (x=='a' and y=='b' and z=='a') aba=aba+1;
+        else if (x=='a' and y=='b' and z=='b') abb=abb+1;
+        else if (x=='b' and y=='a' and z=='a') baa=baa+1;
+        else if (x=='b' and y=='a' and z=='b') bab=bab+1;
+        else if (x=='b' and y=='b' and z=='a') bba=bba+1;
+        else if (x=='b' and y=='b' and z=='b') bbb=bbb+1;
 
-        if (a==2 or b==2 or c==2 or d==2 or e==2 or f==2 or g==2 or h==2) found=true;
+        if (aaa==2 or aab==2 or aba==2 or abb==2 or baa==2 or bab==2 or bba==2 or bbb==2) found=true;
         if (found) cout << x << y << z << " " << pos << endl;
         pos=pos+1;
         x=y;
@@ -203,7 +203,7 @@ using namespace std;
 int main () {
     char n, n0, n1, n2;
     int h = 0, s = 0;
-
+    n0 = n1 = n2 = 'x';
     while (cin >> n) {
         n2 = n1;
         n1 = n0;
