@@ -145,7 +145,7 @@ int main(){
     a = b = c ='x';
     bool trobat = false;
     //cin >> a >> b >> c;
-    while(not trobat and cin >> d and c != '.'){
+    while(not trobat and cin >> d and d != '.'){
         if(a == 'h' and b == 'o' and c == 'l' and d == 'a') trobat = true;
         else{
             a = b;
