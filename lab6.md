@@ -94,7 +94,6 @@ int main(){
 ###  Canvis de base *P56549*
 
 ```c++
-
 #include <iostream>
 using namespace std;
 
