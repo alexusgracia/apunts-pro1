@@ -91,6 +91,56 @@ int main(){
 
 ```
 
+###  Canvis de base *P56549*
+
+```c++
+
+#include <iostream>
+using namespace std;
+
+void int_to_binari(int n) {
+    if (n >= 2) {
+        int_to_binari(n / 2);
+    }
+    cout << n % 2;
+}
+
+void int_to_octal(int n) {
+    if (n >= 8) {
+        int_to_octal(n / 8);
+    }
+    cout << n % 8;
+}
+
+void int_to_hexadecimal(int n) {
+    if (n >= 16) {
+        int_to_hexadecimal(n / 16);
+    }
+    int digit = n % 16;
+    if (digit < 10) {
+        cout << char('0' + digit);
+    } else {
+        cout << char('A' + digit - 10);
+    }
+}
+
+int main() {
+    int n;
+    while (cin >> n) {
+        cout << n << " = ";
+        int_to_binari(n);
+        cout << ", ";
+        int_to_octal(n);
+        cout << ", ";
+        int_to_hexadecimal(n);
+        cout << endl;
+    }
+    return 0;
+
+}
+```
+
+
 ### Exercicis exemple *P24381*
 
 ```c++
@@ -100,21 +150,22 @@ int main(){
 using namespace std;
 
 void cross(int n, char c){
-//PRE: n>3 i n senar
-//POST: creu amb n línies escrites per cout amb caracter c
-for(int i = 0; i < n; ++i){
-  if(i == n/2){
-    for(int j = 0; j < n; ++j){
-      cout << c;
+  //PRE: n>3 i n senar
+  //POST: creu amb n línies escrites per cout amb caracter c
+  for(int i = 0; i < n; ++i){
+    if(i == n/2){
+      for(int j = 0; j < n; ++j){
+        cout << c;
+      }
+      cout << endl;
     }
-    cout << endl;
-  }
-  else{
-    for(int j = 0; j < n; ++j){
-      if(j == n/2)cout << c;
-      else if(j < n/2) cout << ' ';
+    else{
+      for(int j = 0; j < n; ++j){
+        if(j == n/2)cout << c;
+        else if(j < n/2) cout << ' ';
+      }
+      cout << endl;
     }
-    cout << endl;
   }
 }
 
