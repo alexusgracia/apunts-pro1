@@ -255,36 +255,58 @@ using namespace std;
 
 const int MAX = 1000;
 
-void marca_multiples(int i, vector<bool>& garbell){
+void marca_multiples(int i, vector<bool> &garbell)
+{
     int n = garbell.size();
-    for (int j = 2*i; j < n; j += i)
-	garbell[j] = false;
+    for (int j = 2 * i; j < n; j += i)
+        garbell[j] = false;
 }
 
-vector<bool> precalcula_garbell(int n){
-    //garbell [i] indica si i es primer
-    vector<bool> garbell(n, true);
-    
+void precalcula_garbell(vector<bool> &garbell)
+{
+    // garbell [i] indica si i es primer
+
     garbell[0] = garbell[1] = false;
-    for (int i = 2; i < MAX; ++i){
-	if (garbell[i]) marca_multiples(i, garbell);
+    for (int i = 2; i < MAX; ++i)
+    {
+        if (garbell[i])
+            marca_multiples(i, garbell);
     }
-	return garbell;
+    return;
 }
 
-int main(){
-    vector<bool> es_primer = precalcula_garbell(MAX*MAX + 1);
-    
-    int n;
-    while (cin >> n){
-	cout << n;
-	if (not es_primer[n]) cout << " no";
-	//bool true, es primer, bool false, no es primer ;
-	//Haig d'anar del valor minim al maxim al garbell;
-	// El vector ha d'anar entre 0 i un miliÃ³
-	cout << " es primer" << endl;
+void imprimeix_n(vector<bool> &garbell, int n)
+{
+    for (int i = 0; i < n; ++i)
+    {
+        if (garbell[i])
+            cout << "primer ";
+        else
+            cout << "not primer ";
+        cout << i << " ";
+        cout << endl;
     }
 }
+
+int main()
+{
+    vector<bool> garbell(MAX * MAX + 1, true);
+    // imprimeix_n(garbell, 20);
+    precalcula_garbell(garbell);
+    // imprimeix_n(garbell, MAX * MAX + 1);
+    int n;
+    while (cin >> n)
+    {
+        cout << n;
+        if (not garbell[n])
+            cout << " no";
+        // bool true, es primer, bool false, no es primer ;
+        // Haig d'anar del valor minim al maxim al garbell;
+        //  El vector ha d'anar entre 0 i un miliÃ³
+        cout << " es primer" << endl;
+    }
+}
+
 ```
 
 ### Inserció en taula ordenada *P98179*
