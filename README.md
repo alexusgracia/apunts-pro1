@@ -18,5 +18,5 @@ Aquest contingut és **lliure i obert**, especialment recopil·lat i/o creat per
 
 ## 🌐 Web final
 
-Pots consultar la versió navegable a (actualment no funciona):  
-🔗 [https://alexandre.gracia.repo.fib.upc.edu/apunts-pro1/](https://alexandre.gracia.repo.fib.upc.edu/apunts-pro1/)
+Pots consultar la versió navegable a:  
+🔗 [https://alexandre.gracia.repo.fib.upc.edu/apunts-pro1/](https://alexusgracia.github.io/apunts-pro1)
