@@ -1,0 +1,24 @@
+/* Fons global en negre i text clar */
+body {
+    background-color: #000000;
+    color: #eeeeee;
+}
+
+/* Contingut principal amb fons negre */
+.wy-nav-content {
+    background-color: #000000;
+}
+
+/* Text del contingut principal */
+.rst-content {
+    color: #eeeeee;
+}
+
+/* Enllaços sobre fons negre */
+a {
+    color: #80b3ff;
+}
+
+a:hover {
+    color: #c2d9ff;
+}
