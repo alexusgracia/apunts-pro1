@@ -219,12 +219,16 @@ int main() {
 }
 ```
 
-### Insert sort
+Aquest és dels pocs algorismes vistos a l'assignatura per als quals no és fàcil donar una versió
+sense recursivitat. Veureu com es faria iterativament a assignatures posteriors.
 
-Solució del professor Jorge Castro
+### Insert sort
 ```c++
 void insert_sort(vector<int>& v) {
+    // Pre: cap
+    // Post: v conte els elements inicials i esta ordenat creixentment
     int n = v.size();
+    // Inv: v[0..i-1] esta ordenat creixentment
     for (int i = 1; i < n; ++i) {
         int x = v[i];
         int j = i;
