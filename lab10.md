@@ -129,7 +129,7 @@ Alguns vídeos interessants sobre el procés:
 
 [Merge sort in 3 minutes](https://www.youtube.com/watch?v=4VqmGXwpLqc)
 
-[Merge Sort C++ | Ordenamiento por mezcla C++ | Algoritmos de ordenamiento | Forma recursiva](https://www.youtube.com/watch?v=1Xl-Zavaci8)
+[Merge Sort C++ Ordenamiento por mezcla C++ Algoritmos de ordenamiento Forma recursiva](https://www.youtube.com/watch?v=1Xl-Zavaci8)
 
 Solució del professor Jorge Castro
 ```c++
