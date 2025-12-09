@@ -14,4 +14,3 @@ Aquesta documentació conté els laboratoris de PRO1.
 - [Laboratori 8](lab8.md)
 - [Laboratori 9](lab9.md)
 - [Laboratori 10](lab10.md)
-- [Laboratori 11](lab11.md)
