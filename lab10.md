@@ -445,4 +445,48 @@ int main() {
 
 ```
 
+### Sort amb funció pròpia
+
+```c++
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+// Funció de comparació personalitzada
+bool my_function(const string &a, const string &b) {
+    // Ordenem per llargada de les cadenes, i si són iguals, en ordre alfabètic
+    if (a.length() == b.length()) {
+        return a < b;
+    }
+    return a.length() < b.length();
+}
+
+int main() {
+    // Creem un vector de strings
+    vector<string> v = {"pera", "poma", "maduixa", "taronger", "platan"};
+
+    // Ordenem el vector en ordre alfabètic ascendent (per defecte)
+    sort(v.begin(), v.end());
+
+    cout << "Ordenat per ordre alfabètic:" << endl;
+    // Bucle for tradicional amb índex
+    for (int i = 0; i < v.size(); i++) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+
+    // Ordenem el vector utilitzant la funció personalitzada (per llargada, i alfabètic si són iguals)
+    sort(v.begin(), v.end(), my_function);
+
+    cout << "Ordenat per llargada i alfabètic:" << endl;
+    // Bucle for tradicional amb índex
+    for (int i = 0; i < v.size(); i++) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+}
+
+```
+
 Alexandre Gràcia Calvo
