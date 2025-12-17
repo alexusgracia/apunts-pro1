@@ -1,4 +1,4 @@
-# Apunts onzena classe PRO1
+# Apunts desena classe PRO1
 
 ## Algorismes fonamentals
 
