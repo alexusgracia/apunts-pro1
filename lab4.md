@@ -1,5 +1,86 @@
 # Apunts quarta classe PRO1
 
+### Exemple de què no fer!!! *X98718*
+```c++
+
+// AQUEST PROGRAMA NO ÉS CORRECTE
+#include <iostream>
+using namespace std;
+
+int main(){
+    char x0, x1, x2, x3, x4, x5, x6, x7, x8, x9, x10;
+    cin >> x0 >> x1 >> x2 >> x3 >> x4 >> x5 >> x6 >> x7 >> x8 >> x9 >> x10;
+    if (x0 == x1 and x1 == x2 and x2 == x3) cout << x0 << x1 << x2 << " " << 1 << endl;
+    else if (x0 == x2 and x1 == x3 and x2 == x4) cout << x0 << x1 << x2 << " " << 2 << endl;
+    else if (x1 == x2 and x2 == x3 and x3 == x4) cout << x1 << x2 << x3 << " " << 2 << endl;
+    else if (x0 == x3 and x1 == x4 and x2 == x5) cout << x0 << x1 << x2 << " " << 3 << endl;
+    else if (x1 == x3 and x2 == x4 and x3 == x5) cout << x1 << x2 << x3 << " " << 3 << endl;
+    else if (x2 == x3 and x3 == x4 and x4 == x5) cout << x2 << x3 << x4 << " " << 3 << endl;
+    else if (x0 == x4 and x1 == x5 and x2 == x6) cout << x0 << x1 << x2 << " " << 4 << endl;
+    else if (x1 == x4 and x2 == x5 and x3 == x6) cout << x1 << x2 << x3 << " " << 4 << endl;
+    else if (x2 == x4 and x3 == x5 and x4 == x6) cout << x2 << x3 << x4 << " " << 4 << endl;
+    else if (x3 == x4 and x4 == x5 and x5 == x6) cout << x3 << x4 << x5 << " " << 4 << endl;
+    else if (x0 == x5 and x1 == x6 and x2 == x7) cout << x0 << x1 << x2 << " " << 5 << endl;
+    else if (x1 == x5 and x2 == x6 and x3 == x7) cout << x1 << x2 << x3 << " " << 5 << endl;
+    else if (x2 == x5 and x3 == x6 and x4 == x7) cout << x2 << x3 << x4 << " " << 5 << endl;
+    else if (x3 == x5 and x4 == x6 and x5 == x7) cout << x3 << x4 << x5 << " " << 5 << endl;
+    else if (x4 == x5 and x5 == x6 and x6 == x7) cout << x4 << x5 << x6 << " " << 5 << endl;
+    else if (x0 == x6 and x1 == x7 and x2 == x8) cout << x0 << x1 << x2 << " " << 6 << endl;
+    else if (x1 == x6 and x2 == x7 and x3 == x8) cout << x1 << x2 << x3 << " " << 6 << endl;
+    else if (x2 == x6 and x3 == x7 and x4 == x8) cout << x2 << x3 << x4 << " " << 6 << endl;
+    else if (x3 == x6 and x4 == x7 and x5 == x8) cout << x3 << x4 << x5 << " " << 6 << endl;
+    else if (x4 == x6 and x5 == x7 and x6 == x8) cout << x4 << x5 << x6 << " " << 6 << endl;
+    else if (x5 == x6 and x6 == x7 and x7 == x8) cout << x5 << x6 << x7 << " " << 6 << endl;
+    else if (x0 == x7 and x1 == x8 and x2 == x9) cout << x0 << x1 << x2 << " " << 7 << endl;
+    else if (x1 == x7 and x2 == x8 and x3 == x9) cout << x1 << x2 << x3 << " " << 7 << endl;
+    else if (x2 == x7 and x3 == x8 and x4 == x9) cout << x2 << x3 << x4 << " " << 7 << endl;
+    else if (x3 == x7 and x4 == x8 and x5 == x9) cout << x3 << x4 << x5 << " " << 7 << endl;
+    else if (x4 == x7 and x5 == x8 and x6 == x9) cout << x4 << x5 << x6 << " " << 7 << endl;
+    else if (x5 == x7 and x6 == x8 and x7 == x9) cout << x5 << x6 << x7 << " " << 7 << endl;
+    else if (x6 == x7 and x7 == x8 and x8 == x9) cout << x6 << x7 << x8 << " " << 7 << endl;
+    else if (x0 == x8 and x1 == x9 and x2 == x10) cout << x0 << x1 << x2 << " " << 8 << endl;
+    else if (x1 == x7 and x2 == x8 and x3 == x10) cout << x1 << x2 << x3 << " " << 8 << endl;  
+    else if (x2 == x8 and x3 == x9 and x4 == x10) cout << x2 << x3 << x4 << " " << 8 << endl;  
+    else if (x3 == x8 and x4 == x9 and x5 == x10) cout << x3 << x4 << x5 << " " << 8 << endl;
+    else if (x4 == x8 and x5 == x9 and x6 == x10) cout << x4 << x5 << x6 << " " << 8 << endl;
+    else if (x5 == x8 and x6 == x9 and x7 == x10) cout << x5 << x6 << x7 << " " << 8 << endl;
+    else if (x6 == x8 and x7 == x9 and x8 == x10) cout << x6 << x7 << x8 << " " << 8 << endl;
+    else if (x7 == x8 and x8 == x9 and x9 == x10) cout << x7 << x8 << x9 << " " << 8 << endl;
+```
+Solució bona
+
+```c++
+//AQUEST SÍ ÉS CORRECTE
+#include <iostream>
+using namespace std;
+
+int main () {
+    char x,y,z;
+    int pos=0;
+    int a=0,b=0,c=0,d=0, e=0,f=0,g=0,h=0;
+    bool found=false; 
+    cin >> x >> y >> z;
+
+    while (not found){
+        if (x=='a' and y=='a' and z=='a') a=a+1;
+        else if (x=='a' and y=='a' and z=='b') b=b+1;
+        else if (x=='a' and y=='b' and z=='a') c=c+1;
+        else if (x=='a' and y=='b' and z=='b') d=d+1;
+        else if (x=='b' and y=='a' and z=='a') e=e+1;
+        else if (x=='b' and y=='a' and z=='b') f=f+1;
+        else if (x=='b' and y=='b' and z=='a') g=g+1;
+        else if (x=='b' and y=='b' and z=='b') h=h+1;
+
+        if (a==2 or b==2 or c==2 or d==2 or e==2 or f==2 or g==2 or h==2) found=true;
+        if (found) cout << x << y << z << " " << pos << endl;
+        pos=pos+1;
+        x=y;
+        y=z;
+        cin >> z;
+    }
+}
+```
+
 ## Entrada de dades massiva
 
 A vegades els nostres programes tenen una entrada llarga que fa més difícil debugar, fent feixuga la tasca de compilar i reexecutar i passar les dades cada vegada. És per això que el secret és crear un fitxer amb l'entrada de dades. D'això se n'anomena **redirigir** l'entrada. També podem redirigir la sortida.
@@ -395,6 +476,3 @@ int main()
     */
 }
 ```
-
-
-Alexandre Gràcia Calvo

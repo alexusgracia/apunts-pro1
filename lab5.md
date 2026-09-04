@@ -276,5 +276,3 @@ int main(){
 }
 
 ```
-
-Alexandre Gràcia Calvo

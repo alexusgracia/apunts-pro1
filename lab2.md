@@ -238,6 +238,8 @@ if (x > 5) {
 ```
 
 
+
+
 ## Què és un while
 
 while és una estructura de control iterativa que permet repetir un bloc de codi mentre una condició lògica sigui certa (true).
@@ -308,5 +310,3 @@ Contingut:
 - Bucles
 - Exercicis
 
-
-Alexandre Gràcia Calvo

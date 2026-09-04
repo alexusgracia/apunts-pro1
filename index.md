@@ -1,6 +1,6 @@
 # Apunts PRO1
 
-Aquesta documentació conté els laboratoris de PRO1.
+Aquesta documentació conté el contingut dels laboratoris de PRO1 del grup de l'Alexandre.
 
 ## Contingut
 

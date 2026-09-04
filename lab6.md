@@ -383,4 +383,4 @@ L'opció ``-ansi`` força el compilador a utilitzar C++98 (o més específicamen
 
 I a més, podrem fer vector<int> v = {1, 2, 3}; i declarem i inicialitzem a la vegada.
 
-Alexandre Gràcia Calvo
+

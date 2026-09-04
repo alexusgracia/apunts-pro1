@@ -3,6 +3,13 @@
 ## [Web de l'assignatura](https://pro1.cs.upc.edu/)
 https://pro1.cs.upc.edu/
 
+## Accés jutge
+
+Comproveu que teniu accés al [Jutge](https://jutge.org/)
+
+És possible que necessiteu la VPN. [Manual de configuració](https://serveistic.upc.edu/ca/upclink)
+
+
 ## Llenguatge Markdown
 
 [Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
@@ -56,9 +63,19 @@ Taula:
 | Header      | Title       |
 | Paragraph   | Text        |
 
+
+## Linux
+
+### 🐧 Instal·lació de Linux
+
+| Opció | Descripció | Enllaç |
+|-------|-----------|--------|
+| 📚 Aula Virtual | Accés a través de l'aula virtual de la UPC | [Aula Virtual](https://www.fib.upc.edu/ca/la-fib/serveis-tic/aulavirtual) |
+| 💾 Partició del disc | Us ajudarà la distribució LinuxUPC | [LinuxUPC](https://linuxupc.org/) |
+| 🖥️ Virtualbox | Descarregueu Virtualbox i la ISO de l'assignatura | [Virtualbox](https://www.virtualbox.org/) \| [ISO](https://softdocencia.fib.upc.edu/software/) |
+
+
 ## Comandes linux
-
-
 
 ```bash
 cd                  # Canviar de directori
@@ -199,6 +216,7 @@ int main() {
 ## Resum de la sessió
 Contingut:
 - Presentació
+- Linux
 - Comandes bàsiques linux
 - Visual Studio Code
 - Primer programa en c++
@@ -206,8 +224,6 @@ Contingut:
 - Configuració [*clang-format*](https://pro1.cs.upc.edu/recursos/clang-format)
 - Exercicis
 
-> **IMPORTANT!!** No us oblideu de [Configurar windows a casa](https://pro1.cs.upc.edu/pdfs/LAB-ConfigurarEntornWindowsACasa.pdf)
 
 
-Alexandre Gràcia Calvo
 

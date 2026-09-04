@@ -260,4 +260,4 @@ Alguna de les fonts consultades són [FreecodeCamp Big O notation][1]
 
 [1]: https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/
 
-Alexandre Gràcia Calvo
+
