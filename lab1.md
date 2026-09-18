@@ -127,7 +127,7 @@ g++ hello_world.cc -o hello_world.x     # Compilar amb el compilador general
 ```c++
 #Contingut del programa hello_world.cc
 #include iostream
-using namespace std
+using namespace std;
 int main() {
 
     # El meu primer programa en c++
@@ -194,7 +194,6 @@ int main (){
 ```
 
 ### Control C102A *P82374_ca*
->Aquest m'he oblidat de fer-lo avui a classe
 ```c++
 #include <iostream>
 using namespace std;
