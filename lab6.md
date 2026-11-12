@@ -280,6 +280,56 @@ int main() {
     cout << endl;
 
 }
+```
+### Jugant a girar un vector
+
+```cpp
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+    // El nostre programa llegirà n enters, els guardarà i els escriurà a la inversa
+
+    int n;
+    cin >> n;
+
+    vector<int> v(n);
+
+    for (int i = 0; i < n; ++i)
+    {
+        cin >> v[i];
+    }
+
+    for (int j = 0; j < n; ++j)
+    {
+        cout << v[(n - 1) - j] << ' ';
+    }
+    cout << endl;
+
+    for (int j = 1; j <= n; ++j)
+    {
+        cout << v[n - j] << ' ';
+    }
+
+    for (int j = n - 1; j >= 0; --j)
+    {
+        cout << v[j] << ' ';
+    }
+
+    int aux = n - 1;
+    while (n >= 0)
+    {
+        cout << v[aux];
+        --aux;
+    }
+
+    cout << endl;
+}
+```
+
 
 ```
 ### Problema de l'exemple d'incialització i accés
