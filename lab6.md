@@ -331,7 +331,7 @@ int main()
 ```
 
 
-```
+
 ### Problema de l'exemple d'incialització i accés
 Us heu fixat que en l'exemple d'inicialització tindrem sempre un espai al final? Com ho solucionem?
 
