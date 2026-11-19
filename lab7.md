@@ -1,4 +1,4 @@
-# Apunts vuitena classe PRO1
+# Apunts classe PRO1
 
 ## Exercicis per a fer avui
 
@@ -107,45 +107,54 @@ int main() {
 ```c++
 #include <iostream>
 #include <vector>
+#include <string>
 using namespace std;
 
-const int LONG_ABECEDARI = 'z' - 'a' + 1;
+const int LONG_ALFABET = 'z' - 'a' + 1;
 
-char lletra_mes_frequent(const string& s) {
-    vector<int> freq(LONG_ABECEDARI, 0);
-    for (char c : s) ++freq[c - 'a'];
-
-    int millor = 0;
-    for (int i = 1; i < LONG_ABECEDARI; ++i) {
-        if (freq[i] > freq[millor]) millor = i;
+char lletra_mes_frequent(const string &s)
+{
+    // Declarem un vector de tamany LONG_ALFABET anomentat v
+    vector<int> v(LONG_ALFABET, 0);
+    // Per cada lletra de la string s, incremento al vector v la el comptador de la posicio d'aquella lletra
+    int max = 0;
+    for (int i = 0; i < s.size(); ++i)
+    {
+        ++v[s[i] - 'a'];
     }
-    return char('a' + millor);
+    int millor = 0;
+    for (int i = 1; i < LONG_ALFABET; ++i)
+    {
+        if (v[i] > v[millor])
+            millor = i;
+    }
+    return 'a' + millor;
 }
 
-int main() {
+int main()
+{
+    cout.setf(ios::fixed);
+    cout.precision(2);
+
     int n;
     cin >> n;
-
-    vector<string> v(n);
     int suma = 0;
-
-    for (int i = 0; i < n; ++i) {
+    vector<string> v(n);
+    for (int i = 0; i < n; ++i)
+    {
         cin >> v[i];
-        suma += v[i].size();
+        suma = suma + v[i].size();
     }
+    double mitjana = suma / double(n);
+    cout << mitjana << endl;
 
-    double L = double(suma) / double(n);
-
-    int enters = int(L);
-    int decimals = int((L - enters) * 100 + 0.5);
-
-    cout << enters << ".";
-    if (decimals < 10) cout << "0";
-    cout << decimals << endl;
-
-    for (int i = 0; i < n; ++i) {
-        if (v[i].size() >= L) {
-            cout << v[i] << ": " << lletra_mes_frequent(v[i]) << endl;
+    // Recorrer tot el vector, mirant si el tamany de l'element és més gran que el de la mitjana, i si és que si, cridem a la funció
+    for (int i = 0; i < n; ++i)
+    {
+        if (v[i].size() >= mitjana)
+        {
+            char c = lletra_mes_frequent(v[i]);
+            cout << v[i] << ": " << c << endl;
         }
     }
 }
