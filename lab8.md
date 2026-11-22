@@ -138,7 +138,6 @@ Per accedir als membres d’una struct utilitzem l'operador `.` (punt), com veur
 
 Fixa't en l'exemple següent:
 
-```cpp
 
 ### Exemple bàsic amb accés directe
 ```cpp
