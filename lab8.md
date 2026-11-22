@@ -1,4 +1,4 @@
-# Apunts setena classe PRO1
+# Apunts classe PRO1
 
 ## Structs
 
